@@ -9,8 +9,13 @@ body{
     height: 100%;
     margin: 0;
     padding:0;
+    overflow: hidden;
 }
 html{
+    height: 100%;
+}
+
+#main-container{
     height: 100%;
 }
 
@@ -21,87 +26,14 @@ html{
 #main-container.galeria > .contenedor-galeria{
     display: grid;
 }
-
-.contenedor-galeria{
-    display: none;
+#main-container.contacto > .contenedor-contacto{
+    display: grid;
+}
+#main-container.acerca > .contenedor-acerca{
+    display: grid;
 }
 
-.contenedor-home{
-    height: 100vh;
-    overflow: hidden;
-    display:none;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
-    width: 100%;
-    position: relative;
-}
-/* @media(min-width:768px){    
-    .columna1{
-        display:table-cell;
-        background: url("../img/textura-contacto-01.svg");
-        background-color:#ffffff;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .columna2{
-        display:table-cell;
-        background: url("home/branding-01-min.jpg");
-        background-color:#ffffff;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-@media(max-width:767px){    
-    .columna1{
-        display:block;
-        background: url("../img/textura-contacto-01.svg");
-        background-color:#ffffff;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .columna2{
-        display:block;
-        background: red;
-        background-color:#ffffff; 
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-} */
-
-.columna1 {
-    background: url("../img/textura\ fondo-01.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.columna2{
-    background: url("../home/branding-01-min.jpg");
-    background-color: white;
-    background-size: 120%;
-    background-repeat: no-repeat;
-    background-position: -85px 50%;
-    position: relative;
-}
-
-
-.title-name {
-    position: absolute;
-    top: -110px;
-    left: -65px;
-    width: 330px;
-}
-.title-img{
-    position: absolute;
-    top: 50%;
-    right: -189px;
-    width: 400px;
-    height: 92px;
-    margin-top: -46px;
-    z-index: 10;
-}
-
-.menu-container{
+.menu-container {
     position: fixed;
     left: 10px;
     bottom: 40px;
@@ -112,51 +44,142 @@ html{
     grid-template-areas: "menu""icon";
     grid-row-gap: 30px;
 }
-
-.menu-icon{
+.menu-icon {
     height: 25px;
     grid-area: icon;
 }
-.menu-container > .icon-1{
+.menu-container>.icon-1 {
     display: block;
 }
-.menu-container > .icon-2{
+.menu-container>.icon-2 {
     display: none;
 }
-.menu-container.show-menu > .icon-1{
+.menu-container.show-menu>.icon-1 {
     display: none;
 }
-.menu-container.show-menu > .icon-2{
+.menu-container.show-menu>.icon-2 {
     display: block;
 }
-.menu{
+.menu {
     grid-area: menu;
     list-style-type: none;
     margin: 0;
     padding: 0;
     margin-left: 3px;
 }
-.menu-container > .menu{
+.menu-container>.menu {
     display: none;
 }
-.menu-container.show-menu > .menu{
+.menu-container.show-menu>.menu {
     display: block;
 }
-.menu-item{
+.menu-item {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     margin-top: 30px;
     cursor: pointer;
     font-size: 18px;
-    height: 86px;
+    height: 155px;
     text-align: center;
     font-weight: 900;
+    letter-spacing: 7px;
 }
-.menu-item:hover{
+.menu-item:hover {
     transform: rotate(180deg) scale(1.2);
 }
+#main-container.galeria #galeria-item{
+    background: #FF3333;
+    color: white;
+}
+#main-container.galeria #galeria-item:hover{
+    transform: rotate(180deg) scale(1);
+}
+#main-container.contacto #contacto-item{
+    background: #1D1D4C;
+    color: white;
+}
+#main-container.contacto #contacto-item:hover{
+    transform: rotate(180deg) scale(1);
+}
+#main-container.acerca #acerca-item{
+    background: #00A99D;
+    margin-top: 20px;
+    padding: 5px 0;
+    height: 160px;
+    color: white;
+}
+#main-container.acerca #acerca-item {
+    transform: rotate(180deg) scale(1);    
+}
 
 
+
+.contenedor-home{
+    height: 100vh;
+    overflow: hidden;
+    display:none;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    position: relative;
+}
+.contenedor-galeria {
+    display: none;
+    height: 100%;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    position: relative;
+}
+.contenedor-contacto {
+    display: none;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    position: relative;
+}
+.contenedor-acerca {
+    display: none;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    position: relative;
+}
+
+
+.contenedor-home > .columna1 {
+    background: url("../img/textura\ fondo-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contenedor-home > .columna2{
+    background: url("../home/branding-01-min.jpg");
+    background-color: white;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: -85px 50%;
+    position: relative;
+}
+.title-name {
+    position: absolute;
+    top: -110px;
+    left: -65px;
+    width: 330px;
+    cursor: pointer;
+}
+.title-img{
+    position: absolute;
+    top: 50%;
+    right: -189px;
+    width: 400px;
+    height: 92px;
+    margin-top: -46px;
+    z-index: 10;
+}
 .social-container{
     position: absolute;
     bottom: 32px;
@@ -176,11 +199,120 @@ html{
 .social:hover{
     transform: scale(1.2)
 }
-
 .next-icon{
     position: absolute;
     top: 50%;
     right: 18px;
     width: 40px;
     margin-top: -23px;
+}
+
+.contenedor-galeria > .columna1{
+    background: white;
+}
+.contenedor-galeria > .columna2{
+    background: turquoise;
+    overflow: hidden;
+    position: relative;
+}
+.galeria-scroll{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 50vh;
+    grid-template-areas: "tdah tdah" "oftal oftal" "otro otro";
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+}
+.galeria-element{
+    background : gray;
+    border: 1px solid white;
+    display: grid;
+}
+.galeria-element > a{
+    width: 100%;
+    height: 100%;
+}
+#tdah{
+    grid-area: tdah;
+    background: red;
+}
+#oftalmologia{
+    grid-area: oftal;
+    background: #1D1D4C
+}
+#otros{
+    grid-area: otro;
+    background: black;
+}
+
+.contenedor-contacto > .columna1{
+    background: url("../img/textura\ fondo-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.contenedor-contacto > .columna2{
+    background: #1D1D4C;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.contenedor-acerca > .columna1{
+    background-image: url("../acerca\ de/textura-acercade-01.svg"), url("../img/textura\ fondo-01.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.contenedor-acerca > .columna2{
+    background: #1D1D4C;
+    background: url("../img/textura\ fondo-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto;
+    grid-row-gap: 50px;
+    padding: 60px 30px;
+}
+.acerca-de-title{
+    display: grid;
+    grid-template-columns: minmax(190px, 280px) auto;
+    grid-template-rows: min-content;
+    grid-template-areas: "pic text";
+    justify-content: center;
+}
+.acerca-de-title > .puntos{
+    grid-area: pic;
+    width: 21vw;
+    justify-self: end;
+    max-width: 260px;
+    min-width: 195px;
+}
+.acerca-de-title>.ana-img {
+    grid-area: pic;
+    width: 15vw;
+    max-width: 190px;
+    min-width: 140px;
+}
+.acerca-de-title>.hola {
+    grid-area: text;
+    width: 120%;
+    align-self: center;
+    min-width: 190px;
+    max-width: 370px;
+}
+.acerca-de-text > p{
+    font-size: 17px;
+    text-align: justify;
+    font-family: "Quicksand",
+    sans-serif;
 }

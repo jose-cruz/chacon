@@ -10,3 +10,18 @@ function goToGaleria(){
     el.removeAttribute('class');
     el.classList.add('galeria');
 }
+function goToContacto(){
+    var el = document.getElementById('main-container');
+    el.removeAttribute('class');
+    el.classList.add('contacto');
+}
+function goToAcerca(){
+    var el = document.getElementById('main-container');
+    el.removeAttribute('class');
+    el.classList.add('acerca');
+}
+function goToHome() {
+    var el = document.getElementById('main-container');
+    el.removeAttribute('class');
+    el.classList.add('home');
+}

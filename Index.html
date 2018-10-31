@@ -13,15 +13,15 @@
                 <img onclick='showMenu()' class='menu-icon icon-1' src="img/menu-01.svg">
                 <img onclick='showMenu()' class='menu-icon icon-2' src="img/menu-02.svg">
                 <ul class="menu">
-                    <li class='menu-item'><a>Contacto</a></li>
-                    <li onclick="goToGaleria()" class='menu-item'><a>Galería</a></li>
-                    <li class='menu-item'><a>Acerca de</a></li>
+                    <li id='contacto-item' onclick="goToContacto()" class='menu-item'><a>Contacto</a></li>
+                    <li id='galeria-item' onclick="goToGaleria()" class='menu-item'><a>Galería</a></li>
+                    <li id='acerca-item' onclick="goToAcerca()" class='menu-item'><a>Acerca de</a></li>
                 </ul>
             </div>
 
             <div class="contenedor-home">
                 <div class="columna1">
-                    <img class='title-name' src="img/logo2.svg" alt="logotipo"/>
+                    <img onclick="goToHome()" class='title-name' src="img/logo.svg" alt="logotipo"/>
                     <img class='title-img' src="home/branding-titulo-01.svg"/>
                     <div class='social-container'>
                         <a href="https://www.instagram.com/analaurach0496/?hl=es-la"><img class='social social-1' src="img/redes-01.svg"></a>
@@ -39,19 +39,93 @@
             </div>
             <div class="contenedor-galeria">
                 <div class="columna1">
-                    <img class='title-name' src="img/logo2.svg" alt="logotipo"/>
-                    <img class='title-img' src="home/branding-titulo-01.svg"/>
-                    <div class='social-container'>
-                        <a href="https://www.instagram.com/analaurach0496/?hl=es-la"><img class='social social-1' src="img/redes-01.svg"></a>
-                        <a href="https://www.behance.net/analau04960453"><img class='social social-2' src="img/redes-02.svg"></a>
-                    </div>
-                    <!-- <div>
-                        <img src="img/logo2.svg" alt="logotipo"/>
-                    </div> -->
+                    <img onclick="goToHome()" class='title-name' src="img/logo.svg" alt="logotipo" />
+                    <h1 class='title-img'>GALERIA</h1>
                 </div>
                 <div class="columna2">
-                    <div class='next-icon'>
-                        <img src="img/flechas-01.svg">
+                    <div class='galeria-scroll'>
+                        <div id='tdah' class='galeria-element main-element'>
+                            <a href="proyectos/tdah.html">
+
+                            </a>
+                        </div>
+                        <div id='oftalmologia' class='galeria-element main-element'>
+                            <a href="proyectos/oftal.html">
+                            
+                            </a>
+                        </div>
+                        <div id='otros' class='galeria-element main-element'>
+                    
+                        </div>
+                        <div class='galeria-element'>
+                    
+                        </div>
+                        <div class='galeria-element'>
+                    
+                        </div>
+                        <div class='galeria-element'>
+                    
+                        </div>
+                        <div class='galeria-element'>
+                    
+                        </div>
+                        <div class='galeria-element'>
+                    
+                        </div>
+                        <div class='galeria-element'>
+                    
+                        </div>
+                        <div class='galeria-element'>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-contacto">
+                <div class="columna1">
+                        <img onclick="goToHome()" class='title-name' src="img/logo2.svg" alt="logotipo" />
+                        <h1 class='title-img'>CONTACTO</h1>
+                        
+                    </div>
+                    <div class="columna2">
+                        <div class="location">
+                            <img src="">
+                            <p>Guatemala City, Guatemala</p>
+                        </div>
+                        <div class="phone">
+                            <img src="">
+                            <p>4004-8555</p>
+                        </div>
+                        <div class='mail-to'>
+                            <p>
+                                anachacon1111@gmail.com
+                                <img src="">
+                            </p>
+                        </div>
+                        <div class='social-media'>
+                            <a href="https://www.instagram.com/analaurach0496/?hl=es-la"><img class='social social-1' src="img/redes-01.svg"></a>
+                            <a href="https://www.behance.net/analau04960453"><img class='social social-2' src="img/redes-02.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-acerca">
+                    <div class="columna1">
+                        <img onclick="goToHome()" class='title-name' src="img/logo2.svg" alt="logotipo" />
+                        <h1 class='title-img'>ACERCA DE</h1>
+                    
+                </div>
+                <div class="columna2">
+                    <div class='acerca-de-title'>
+                        <img class='puntos' src="acerca de/fotoperfil.svg">
+                        <img class='ana-img' src="acerca de/fotoperfil.png">
+                        <img class='hola' src="acerca de/hola-01.svg">
+                    </div>
+                    <div class='acerca-de-text'>
+                        <p>No solo soy una diseñadora, también soy una estratega que busca solucionar problemas de comunicación de manera innovadora.
+                        Perseverante, no me dio por vencida hasta encontrar la mejor opción, por mas difícil que sea, siempre encuentro la manera.
+                        Nunca dejo de aprender, me gusta seguir traba jando en mi misma e investigar nuevas técnicas y tendencias. Aunque me considero
+                        una diseñadora multidiplinaria, lo que más me apasiona es el branding, la ilustración y motion graphics. Si buscas traba
+                        jar con alguien con mucha paciencia y dedicación... estas en el lugar indicado.</p>
                     </div>
                 </div>
             </div>
