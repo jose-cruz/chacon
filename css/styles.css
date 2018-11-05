@@ -9,10 +9,13 @@ body{
     height: 100%;
     margin: 0;
     padding:0;
+}
+.no-scroll{
     overflow: hidden;
 }
 html{
     height: 100%;
+    margin: 0;
 }
 
 #main-container{
@@ -43,6 +46,18 @@ html{
     grid-template-rows: min-content min-content;
     grid-template-areas: "menu""icon";
     grid-row-gap: 30px;
+}
+.normal-menu{
+    visibility: visible;
+}
+.white-menu{
+    visibility: hidden;
+}
+.acerca .normal-menu{
+    visibility: hidden;
+}
+.acerca .white-menu{
+    visibility: visible;
 }
 .menu-icon {
     height: 25px;
@@ -83,6 +98,7 @@ html{
     text-align: center;
     font-weight: 900;
     letter-spacing: 7px;
+    color: #1D1D4C;
 }
 .menu-item:hover {
     transform: rotate(180deg) scale(1.2);
@@ -208,12 +224,21 @@ html{
 }
 
 .contenedor-galeria > .columna1{
-    background: white;
+    background: url('../galeria/textura-galeria-01.svg');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
 }
 .contenedor-galeria > .columna2{
     background: turquoise;
     overflow: hidden;
     position: relative;
+}
+.contenedor-galeria .title-img{
+    right: unset;
+    left: 50%;
+    margin-left: -170px;
 }
 .galeria-scroll{
     display: grid;
@@ -230,7 +255,6 @@ html{
 }
 .galeria-element{
     background : gray;
-    border: 1px solid white;
     display: grid;
 }
 .galeria-element > a{
@@ -251,7 +275,8 @@ html{
 }
 
 .contenedor-contacto > .columna1{
-    background: url("../img/textura\ fondo-01.jpg");
+    background: url('../contacto/textura-contacto-01.svg');
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -261,6 +286,63 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-row-gap: 35px;
+    align-content: center;
+    padding: 50px;
+    align-items: center;
+}
+.contenedor-contacto .title-img{
+    right: -30px;
+    width: 500px;
+}
+.contenedor-contacto > .columna2 > div  p{
+    margin: 0;
+    font-size: 19px;
+}
+.contenedor-contacto > .columna2 > .social-media{
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-column-gap: 20px;
+}
+.location, .phone{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content auto;
+    color: white;
+    grid-template-areas: "img txt";
+    grid-column-gap: 10px;
+}
+.mail-to{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content;
+}
+.mail-to > img{
+    margin-left: -18px;
+    width: 370px;
+}
+.location > img{
+    grid-area: img;
+    width: 30px;
+}
+.location > p{
+    grid-area: txt;
+}
+.phone > img{
+    grid-area: img;
+    width: 30px;
+}
+.phone > p{
+    grid-area: txt;
+}
+.mail-to > .border > img{
+    width: 30px;
+}
+.mail-to > .border > p{
+    color: white;
 }
 
 
@@ -282,6 +364,13 @@ html{
     grid-template-rows: min-content auto;
     grid-row-gap: 50px;
     padding: 60px 30px;
+}
+.contenedor-acerca .title-img{
+    height: 130px;
+    right: unset;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -70px;
 }
 .acerca-de-title{
     display: grid;
@@ -316,3 +405,154 @@ html{
     font-family: "Quicksand",
     sans-serif;
 }
+
+.proyecto-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60vh min-content min-content min-content;
+    grid-row-gap: 50px;
+    background: white;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.proyecto-titulo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+}
+.proyecto-descripcion-1{
+    width: 100%;
+}
+.proyecto-descripcion-1 > p{
+    width: 100%;
+    padding: 30px;
+    text-align: justify;
+    margin: 0;
+}
+.proyecto-slider{
+    display: grid;
+    position: relative;
+    padding: 0 40px;
+}
+.proyecto-slider > img{
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -15px;
+}
+.proyecto-slider > img:hover{
+    transform: scale(1.2);
+}
+.slider-previous{
+    right: unset;
+    left: 5px;
+    transform: rotate(180deg);
+}
+.slider-previous:hover{
+    transform: scale(1.2) rotate(180deg) !important;
+}
+.slider-imgs-container{
+    height: 530px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.slider-imgs-container > img{
+    max-height: 530px;
+    max-width: 750;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.proyecto-descripcion-2 > p{
+    width: 100%;
+    padding: 30px;
+    text-align: justify;
+    margin: 0;
+}
+.regresar-main{
+    border: none;
+    color: #1D1D4C;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+    font-weight: 900;
+    font-size: 20px;
+    text-decoration: none;
+    background: white;
+    padding: 3px 5px;
+    border: 2px solid #1d1d4c;
+}
+.regresar-main:hover{
+    text-decoration: underline;
+}
+
+
+
+
+@media(max-width: 768px){
+    body{
+        overflow: auto !important;
+    }
+    .contenedor-home, .contenedor-contacto, .contenedor-acerca, .contenedor-galeria{
+        height: 200vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contenedor-home > .columna1 > .title-img{
+        top: 50%;
+        left: 50%;
+        margin-top: -46px;
+        margin-left: -200px;
+        right: unset;
+    }
+    .contenedor-home > .columna2{
+        background-size: contain;
+        background-position: center;
+    }
+
+    /* .contenedor-contacto{
+        height: 200vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    } */
+    #main-container.contacto > .menu-container > ul > li{
+        color: white;
+    }
+/* 
+    .contenedor-acerca{
+        height: 200vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    } */
+    .contenedor-acerca > .columna2{
+        padding-left: 80px;
+    }
+
+    .contenedor-galeria > .columna1{
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .slider-imgs-container{
+        height: 375px;
+    }
+
+    .slider-imgs-container > img{
+        max-height: 375px;
+        max-width: 500px;
+    }
+
+}
+
+
+
+

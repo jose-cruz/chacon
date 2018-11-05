@@ -7,11 +7,13 @@
         <title> Ana Chacon </title>
         <meta charset="utf-8"/>
     </head>
-    <body>
+    <body class='no-scroll'>
         <div id='main-container' class="home">
             <div id='menu-container' class='menu-container'>
-                <img onclick='showMenu()' class='menu-icon icon-1' src="img/menu-01.svg">
-                <img onclick='showMenu()' class='menu-icon icon-2' src="img/menu-02.svg">
+                <img onclick='showMenu()' class='menu-icon icon-1 normal-menu' src="img/menu-01.svg">
+                <img onclick='showMenu()' class='menu-icon icon-2 normal-menu' src="img/menu-02.svg">
+                <img onclick='showMenu()' class='menu-icon icon-1 white-menu' src="img/menu3.svg">
+                <img onclick='showMenu()' class='menu-icon icon-2 white-menu' src="img/menu3.1.svg">
                 <ul class="menu">
                     <li id='contacto-item' onclick="goToContacto()" class='menu-item'><a>Contacto</a></li>
                     <li id='galeria-item' onclick="goToGaleria()" class='menu-item'><a>Galería</a></li>
@@ -40,43 +42,74 @@
             <div class="contenedor-galeria">
                 <div class="columna1">
                     <img onclick="goToHome()" class='title-name' src="img/logo.svg" alt="logotipo" />
-                    <h1 class='title-img'>GALERIA</h1>
+                    <img class='title-img' src="galeria/galeria.svg"/>
                 </div>
                 <div class="columna2">
                     <div class='galeria-scroll'>
-                        <div id='tdah' class='galeria-element main-element'>
-                            <a href="proyectos/tdah.html">
-
-                            </a>
-                        </div>
-                        <div id='oftalmologia' class='galeria-element main-element'>
+                        <div id='oftalmologia' class='galeria-element main-element' style="background: url('galeria/thumbnails/pro1.jpg'); background-size: cover;">
                             <a href="proyectos/oftal.html">
                             
                             </a>
                         </div>
-                        <div id='otros' class='galeria-element main-element'>
-                    
+                        <div id='tdah' class='galeria-element main-element' style="background: url('galeria/thumbnails/pro2.jpg'); background-size: cover;">
+                            <a href="proyectos/tdah.html">
+
+                            </a>
                         </div>
-                        <div class='galeria-element'>
-                    
+                        <div id='otros' class='galeria-element main-element' style="background: url('galeria/thumbnails/pro3.jpg'); background-size: cover;">
+                            <a href='proyectos/principito.html'>
+                                <img src="">
+                            </a>
                         </div>
-                        <div class='galeria-element'>
-                    
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro4.jpg'); background-size: cover;">
+                            <a href='proyectos/fyf.html'>
+                                <img src="">
+                            </a>
                         </div>
-                        <div class='galeria-element'>
-                    
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro5.jpg'); background-size: cover;">
+                            <a href='proyectos/mental.html'>
+                                <img src="">
+                            </a>
                         </div>
-                        <div class='galeria-element'>
-                    
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro6.jpg'); background-size: cover;">
+                            <a href='proyectos/fado.html'>
+                                <img src="">
+                            </a>
                         </div>
-                        <div class='galeria-element'>
-                    
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro7.jpg'); background-size: cover;">
+                            <a href='proyectos/espacio.html'>
+                                <img src="">
+                            </a>
                         </div>
-                        <div class='galeria-element'>
-                    
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro8.jpg'); background-size: cover;">
+                            <a href='proyectos/flash.html'>
+                                <img src="">
+                            </a>
                         </div>
-                        <div class='galeria-element'>
-                    
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro9.jpg'); background-size: cover;">
+                            <a href='proyectos/tostaduria.html'>
+                                <img src="">
+                            </a>
+                        </div>
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro10.jpg'); background-size: cover;">
+                            <a href='proyectos/witch.html'>
+                                <img src="">
+                            </a>
+                        </div>
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro11.jpg'); background-size: cover;">
+                            <a href='proyectos/brody.html'>
+                                <img src="">
+                            </a>
+                        </div>
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro12.jpg'); background-size: cover;">
+                            <a href='proyectos/electric.html'>
+                                <img src="">
+                            </a>
+                        </div>
+                        <div class='galeria-element' style="background: url('galeria/thumbnails/pro13.jpg'); background-size: cover;">
+                            <a href='proyectos/happiness.html'>
+                                <img src="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -84,23 +117,20 @@
             <div class="contenedor-contacto">
                 <div class="columna1">
                         <img onclick="goToHome()" class='title-name' src="img/logo2.svg" alt="logotipo" />
-                        <h1 class='title-img'>CONTACTO</h1>
+                        <img class='title-img' src="contacto/CONTACTO.svg">
                         
                     </div>
                     <div class="columna2">
                         <div class="location">
-                            <img src="">
+                            <img onclick='showMenu()' src="contacto/gps.svg">
                             <p>Guatemala City, Guatemala</p>
                         </div>
                         <div class="phone">
-                            <img src="">
+                            <img onclick='showMenu()' src="contacto/telefono.svg">
                             <p>4004-8555</p>
                         </div>
                         <div class='mail-to'>
-                            <p>
-                                anachacon1111@gmail.com
-                                <img src="">
-                            </p>
+                            <img onclick='showMenu()' src="contacto/correo.svg">
                         </div>
                         <div class='social-media'>
                             <a href="https://www.instagram.com/analaurach0496/?hl=es-la"><img class='social social-1' src="img/redes-01.svg"></a>
@@ -111,7 +141,7 @@
                 <div class="contenedor-acerca">
                     <div class="columna1">
                         <img onclick="goToHome()" class='title-name' src="img/logo2.svg" alt="logotipo" />
-                        <h1 class='title-img'>ACERCA DE</h1>
+                        <img class='title-img' src="acerca de/acercade.svg">
                     
                 </div>
                 <div class="columna2">
