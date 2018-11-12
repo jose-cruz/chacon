@@ -22,9 +22,16 @@
             </div>
 
             <div class="contenedor-home">
+                <div class="columna2 show-1" id='home-slider'>
+                    <div class='next-icon'>
+                        <img src="img/flechas-01.svg" onclick="nextPicSlider()">
+                    </div>
+                </div>
                 <div class="columna1">
                     <img onclick="goToHome()" class='title-name' src="img/logo.svg" alt="logotipo"/>
-                    <img class='title-img' src="home/branding-titulo-01.svg"/>
+                    <img class='title-img' id="home-1" src="home/branding-titulo-01.svg"/>
+                    <img class='title-img' id="home-2" src="home/editorial-titulo-01.svg"/>
+                    <img class='title-img' id="home-3" src="home/ilustracion-titulo-01.svg"/>
                     <div class='social-container'>
                         <a href="https://www.instagram.com/analaurach0496/?hl=es-la"><img class='social social-1' src="img/redes-01.svg"></a>
                         <a href="https://www.behance.net/analau04960453"><img class='social social-2' src="img/redes-02.svg"></a>
@@ -32,11 +39,6 @@
                     <!-- <div>
                         <img src="img/logo2.svg" alt="logotipo"/>
                     </div> -->
-                </div>
-                <div class="columna2">
-                    <div class='next-icon'>
-                        <img src="img/flechas-01.svg">
-                    </div>
                 </div>
             </div>
             <div class="contenedor-galeria">
@@ -48,67 +50,67 @@
                     <div class='galeria-scroll'>
                         <div id='oftalmologia' class='galeria-element main-element' style="background: url('galeria/thumbnails/pro1.jpg'); background-size: cover;">
                             <a href="proyectos/oftal.html">
-                            
+                                <h2>IMAGEN PARA EL CONGRESO CENTROAMERICANO DE RESIDENTES DE OFTALMOLOGÍA</h2>
                             </a>
                         </div>
                         <div id='tdah' class='galeria-element main-element' style="background: url('galeria/thumbnails/pro2.jpg'); background-size: cover;">
                             <a href="proyectos/tdah.html">
-
+                                <h2>MATERIAL PARA EL TRATAMIENTO DE NIÑOS CON TDAH</h2>
                             </a>
                         </div>
                         <div id='otros' class='galeria-element main-element' style="background: url('galeria/thumbnails/pro3.jpg'); background-size: cover;">
                             <a href='proyectos/principito.html'>
-                                <img src="">
+                                <h2>COFFEE TABLE BOOK PARA LOS 75 AÑOS DE EL PRINCIPITO</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro4.jpg'); background-size: cover;">
                             <a href='proyectos/fyf.html'>
-                                <img src="">
+                                <h2>MUSIC Festival FYF</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro5.jpg'); background-size: cover;">
                             <a href='proyectos/mental.html'>
-                                <img src="">
+                                <h2>POSTER E INSTALACIÓN PARA SEMINARIO DE PSICOLOGÍA</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro6.jpg'); background-size: cover;">
                             <a href='proyectos/fado.html'>
-                                <img src="">
+                                <h2>PANADERÍA FADO</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro7.jpg'); background-size: cover;">
                             <a href='proyectos/espacio.html'>
-                                <img src="">
+                                <h2>“SANTOS DEL ARTE”</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro8.jpg'); background-size: cover;">
                             <a href='proyectos/flash.html'>
-                                <img src="">
+                                <h2>FOTO CONCEPTUAL, AÑOS 70</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro9.jpg'); background-size: cover;">
                             <a href='proyectos/tostaduria.html'>
-                                <img src="">
+                                <h2>DISEÑO PÁGINA WEB PARA LA TOASTADURIA</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro10.jpg'); background-size: cover;">
                             <a href='proyectos/witch.html'>
-                                <img src="">
+                                <h2>DESARROLLO DE PERSONAJES CUENTO</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro11.jpg'); background-size: cover;">
                             <a href='proyectos/brody.html'>
-                                <img src="">
+                                <h2>DESPLEGABLE NEVILLE BRODY</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro12.jpg'); background-size: cover;">
                             <a href='proyectos/electric.html'>
-                                <img src="">
+                                <h2>LYRIC VIDEO-ELECTRIC LOVE BORNE</h2>
                             </a>
                         </div>
                         <div class='galeria-element' style="background: url('galeria/thumbnails/pro13.jpg'); background-size: cover;">
                             <a href='proyectos/happiness.html'>
-                                <img src="">
+                                <h2>POSTER TIPOGÁFICO</h2>
                             </a>
                         </div>
                     </div>
@@ -130,11 +132,11 @@
                             <p>4004-8555</p>
                         </div>
                         <div class='mail-to'>
-                            <img onclick='showMenu()' src="contacto/correo.svg">
+                            <a href='mailto:anachacon1111@gmail.com'><img onclick='showMenu()' src="contacto/correo.svg"></a>
                         </div>
                         <div class='social-media'>
-                            <a href="https://www.instagram.com/analaurach0496/?hl=es-la"><img class='social social-1' src="img/redes-01.svg"></a>
-                            <a href="https://www.behance.net/analau04960453"><img class='social social-2' src="img/redes-02.svg"></a>
+                            <a href="https://www.instagram.com/analaurach0496/?hl=es-la"><img class='social social-1' src="img/redes-01-white.svg"></a>
+                            <a href="https://www.behance.net/analau04960453"><img class='social social-2' src="img/redes-02-white.svg"></a>
                         </div>
                     </div>
                 </div>
